@@ -40,7 +40,7 @@ Container
 }
 .navbar {
     height: fit-content;
-    background-color: #f4f4f4;
+    background-color: #fdfdfd;
     color: gray;
 }
 .nav{
@@ -51,10 +51,17 @@ Container
     vertical-align: center;
     font-size: 22px;
 }
+.nav{
+    padding-bottom: 5px;
+}
 .nav li {
-    padding: 20px;
+    padding: 10px 10px 4px 10px;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
 
+}
+.nav li:hover{
+    border-bottom: 2px solid rgba(243, 220, 190, 0.849);
 }
 
 img {max-width:100%;
@@ -98,6 +105,7 @@ font-size: 18px;
 }
 
 .details-text{
+    padding-top: 40px;
     display: block;
     text-align: center;
 }
@@ -180,8 +188,12 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    flex-grow: 10;
     background-color: #f4f4f4;
+}
+.collage ul li:last-child:hover,
+.collage ul li:first-child:hover{
+    cursor: pointer;
 }
 .collage ul li img{
     max-height: 100%;
@@ -189,12 +201,10 @@ font-size: 18px;
     object-fit: cover;
     vertical-align: bottom;
 }
-.collage ul li:last-child{
-    flex-grow: 10;
-}
+
 
 .vendors{
-    background-color: #f4f4f4;
+    background-color: white;
     padding-top: 40px;
     display: flex;
     height: 75vh;
@@ -207,4 +217,8 @@ font-size: 18px;
     justify-content: space-around;
     text-align: center;
     width: 33.33%;
+}
+
+.vendors img{
+    border-radius: 5px;
 }
