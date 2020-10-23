@@ -1,0 +1,142 @@
+/**
+Initial settings
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.7)), url("../img/header-bg-img.jpg");
+}
+
+
+.font-RaleWay {
+    font-family: RaleWay, sans-serif;
+  }
+
+.font-Cormorant {
+    font-family: Cormorant, serif;
+  }
+/**
+Container
+*/
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.box {
+    height: 20vh;
+}
+.navbar {
+    height: fit-content;
+    background-color: #f4f4f4;
+    color: gray;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    vertical-align: center;
+    font-size: 22px;
+}
+.nav li {
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+img {max-width:100%;
+    height: -webkit-fill-available;
+}
+.header{
+    height: 90vh;
+}
+.header-three-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+
+.header-img-left, .header-img-right{
+    width: 33%;
+    padding: 50px;
+}
+
+.header-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+.header-text-container small{
+text-align: center;
+font-size: 18px;
+}
+.header-text-container p{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.header-text-container h1{
+    padding-top: 40px;
+    font-size: 44px;
+}
+.main{
+    background-color: #f4f4f4;
+    padding-top: 20px;
+}
+
+.details-text{
+    display: block;
+    text-align: center;
+}
+.details-text p {
+    font-size: 180%;
+}
+.details-text p:after {
+    display: block;
+    height: 2px;
+    background-color: gray;
+    content: " ";
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+.main {
+    height: auto;
+}
+.details-text h2 {
+    font-size: 300%;
+    font-weight: 300;
+    margin-bottom: 30px
+}
+
+.flex-2-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+}
+.flex-2-column p{
+    padding: 60px;
+    font-size: 140%;
+}
+
